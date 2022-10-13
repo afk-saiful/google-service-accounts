@@ -1,0 +1,10 @@
+pip3 install -U -r requirements.txt
+python gen_sa_accounts.py
+python gen_sa_accounts.py --list-projects
+python gen_sa_accounts.py --enable-services projectid
+python gen_sa_accounts.py --create-sas projectid
+python gen_sa_accounts.py --download-key projectid
+
+accounts folder --> powershell
+
+$emails = Get-ChildItem .\**.json |Get-Content -Raw |ConvertFrom-Json |Select -ExpandProperty client_email >>emails.txt
