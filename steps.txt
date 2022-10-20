@@ -1,4 +1,4 @@
-pip3 install -U -r requirements.txt
+pip3 install -r requirements.txt
 python gen_sa_accounts.py
 python gen_sa_accounts.py --list-projects
 python gen_sa_accounts.py --enable-services projectid
